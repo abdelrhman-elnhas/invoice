@@ -1,0 +1,66 @@
+/* Bootstrap Override */
+body {
+	--bs-body-font-family: var(--bs-font-sans-serif);
+	--bs-body-font-size: 1rem;
+	--bs-body-font-weight: 400;
+	--bs-body-line-height: 2;
+	--bs-body-color: #0f1932;
+	--bs-primary: #0ee89d;
+	--bs-primary-rgb: 14, 232, 157;
+	--bs-border-color: #eeeeee;
+}
+
+.invoice-number {
+	color: #f65e7c;
+}
+
+table {
+	margin-block: 20px;
+}
+
+@media print {
+	@page {
+		margin-top: 0;
+		size: A4;
+		margin: 10mm;
+	}
+
+	body {
+		font-size: 12px;
+		line-height: 1.5;
+	}
+
+	.container {
+		padding: 0;
+	}
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+		margin-block: 10px;
+	}
+
+	th,
+	td {
+		padding: 8px;
+		border: 1px solid #ddd;
+		text-align: left;
+	}
+
+
+	.social-icon,
+	#footer-bottom {
+		display: none;
+	}
+
+
+	.invoice-number {
+		text-align: left;
+		font-size: 2.5em;
+	}
+
+	.text-primary {
+		color: #0f1932 !important;
+	}
+
+}
